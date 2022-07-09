@@ -7,4 +7,4 @@
 <p>전략 패턴 적용 전에는 SearchButton 내부에 if문을 통해 각 기능을 구분한 반면 전략패턴 적용 후에는 SearchStrategy 인터페이스를 생성하고 각각의 인터페이스를 상속받은 SearchStrategyAll, SearchStrategyImage, SearchStrategyMap, SearchStrategyNews를 구현하여 각각의 검색 기능을 클래스로 만들어 구현하였다. </p>
 <p>그리고 SearchStrategy를 SearchButton에 private으로 두고 StrategySearchAll으로 초기화하였다. 그리고 setSearchStrategy를 두어 검색전략을 계속 바꿀 수 있도록 하였다.</p>
 <p>MyProgram 내부에 SearchButton을 두고 setModeAll, setModeImage, setModeMap, setModeNews를 두어 각각의 searchbutton의 searchStrategy를 바꿔주었다.</p>
-<p>이를 통해 if절로 동작하던 것이 각각의 클래스로 바꾸어 기능 변경 및 추가 시 전략 부분만을 수정하게 하여 결합성을 낮추고 응집도을 올렸다.</p>
+<p>이를 통해 if절로 동작하던 것이 각각의 클래스로 바꾸어 기능 변경 및 추가 시 전략 부분만을 수정하게 하여 옵션들 마다의 행동들을 모듈화하여 독립적이고 상호 교체 가능하도록 하였다.</p>
